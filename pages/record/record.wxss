@@ -1,1 +1,4 @@
-/* pages/record/record.wxss */
+.putButton{
+  color: white;
+  background-color: red;
+}
