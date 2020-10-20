@@ -1,2 +1,3 @@
 <!--pages/record/record.wxml-->
-<text>pages/record/record.wxml</text>
+<button hover-class="putButton" bindlongpress='longpress' bindtouchend="leave">长按开始录音</button>
+<view>{{asrRes}}</view>
