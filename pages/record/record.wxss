@@ -2,3 +2,65 @@
   color: white;
   background-color: red;
 }
+.up {
+  text-align: center;
+  margin: auto;
+  width: 720rpx;
+  display: flex;
+  justify-content: center;
+}
+.up textarea {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  background-color: #fdd420;
+  border-radius: 40rpx;
+  border-style: solid;
+  border-width: 10rpx;
+  border-color: orange;
+  width: 90%;
+}
+.pig {
+  text-align: center;
+  margin: auto;
+}
+.pig image {
+  height: 550rpx;
+  width: 640rpx;
+}
+.down {
+  /* background-color: papayawhip; */
+  position:absolute;
+  display: flex;
+  bottom: 15rpx;
+  width: 750rpx;
+  justify-content: space-around;
+}
+
+.in {
+  background-color: papayawhip;
+  width: 660rpx;
+  height: 88rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.input {
+  width: 500rpx;
+  height: 80rpx;
+  border: 5rpx solid rebeccapurple;
+  border-radius: 25rpx;
+  align-items: center;
+}
+.btn {
+  border-radius: 15rpx;
+  background: dodgerblue;
+  /* color: white; */
+  font-size: 35rpx;
+  height: 80rpx;
+  width: 140rpx;
+}
+.switch {
+  /* float: left; */
+}
+.button {
+  width: 650rpx;
+}

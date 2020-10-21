@@ -6,10 +6,14 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "首页"
+      "text": "首页",
+      "iconPath": "img/main.png",
+      "selectedIconPath": "img/main.png"
     },{
       "pagePath": "pages/record/record",
-      "text": "智能"
+      "text": "智能",
+      "iconPath": "img/main.png",
+      "selectedIconPath": "img/main.png"
     }]
   },
   "window": {
@@ -18,6 +22,8 @@
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index"
+  },
   "sitemapLocation": "sitemap.json"
 }

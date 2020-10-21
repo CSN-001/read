@@ -6,9 +6,25 @@ Page({
    */
   data: {
     recorderManager: null,
-    asrRes: null
+    asrRes: null,
+    icon: "music-o",
+    i: true,
+    inputing: ""
   },
-  //长按录音事件  
+  //变换语音文字图标
+  vary() {
+    if (this.data.i) {
+      this.setData({i: false, icon: "comment-circle-o"})
+    } else {
+      this.setData({i:true, icon: "music-o"})
+    }
+  },
+  send() {
+    wx.request({
+      url: '',
+    })
+  },
+  //长按录音事件
   longpress() {
     var recorderManager = wx.getRecorderManager()
     this.setData({
@@ -32,18 +48,14 @@ Page({
       console.log("输出录音信息:" + e)
       //将临时文件路径发送给后台进行处理
       wx.uploadFile({
-        url: 'http://10.0.1.31:5000/recorder1',
+        url: 'http://172.18.81.177:5000/recorder1',
         filePath: e.tempFilePath,
         name: 'file', //通过name后端获取文件的二进制内容
         success: res => {
           console.log(res)
-          if (res.data == "asr fail") {
-            console.log("弹出翻译失败!")
-          } else {
-            that.setData({
-              asrRes: res.data
-            })
-          }
+          that.setData({
+            asrRes: res.data
+          })
         },
         fail: err => {
           console.log(err)
