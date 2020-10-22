@@ -9,7 +9,11 @@ Page({
     asrRes: null,
     icon: "music-o",
     i: true,
-    inputing: ""
+    inputing: "",
+    imshow: true,
+    audio: null,
+    value: "",
+    items: ['翻译', '对话', '诗词', '音乐']
   },
   //变换语音文字图标
   vary() {
@@ -19,10 +23,21 @@ Page({
       this.setData({i:true, icon: "music-o"})
     }
   },
-  send() {
-    wx.request({
-      url: '',
+  //播放后台传输来的音频
+  adplay() {
+    this.data.audio.src = 'https://www.runoob.com/try/demo_source/horse.mp3'
+    this.data.audio.play()
+    this.data.audio.onPlay(() => {
+      this.setData({imshow: false})
     })
+    this.data.audio.onEnded(() => {
+      this.setData({imshow: true})
+    })
+  },
+  //文本发送到后端
+  send() {
+    this.adplay()
+    this.setData({value: this.data.inputing})
   },
   //长按录音事件
   longpress() {
@@ -67,7 +82,8 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const Audio = wx.createInnerAudioContext();
+    this.setData({audio: Audio})
   },
 
   /**

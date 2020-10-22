@@ -3,8 +3,15 @@
     <textarea name="en" cols="25" rows="4" readonly model:value="{{value}}" />
     </view>
   <view class="pig">
-    <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/pig2.jpg" wx:if="{{true}}"/>
+    <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/pig2.jpg" wx:if="{{imshow}}"/>
     <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/pig.gif" wx:else/>
+  </view>
+  <view>
+    <radio-group class="item-right radio-group" bindchange="changeSex">
+      <label class="radio" wx:for="{{items}}" wx:key="index">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item}}
+      </label>
+    </radio-group>
   </view>
   <view class="down">
     <view class="switch">
@@ -15,7 +22,7 @@
       <button class="btn" bindtap="send">确认</button>
     </view>
     <view class="button" wx:else>
-      <button hover-class="putButton" bindlongpress='longpress' bindtouchend="leave">长按开始录音</button>
+      <button hover-class="putButton" bindlongpress='longpress' bindtouchend="leave">长按开始识别</button>
     </view>
   </view>
 </view>
