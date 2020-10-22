@@ -1,5 +1,6 @@
 {
   "usingComponents": {},
   "navigationBarTextStyle": "black",
-  "navigationBarTitleText": "智能佩奇"
+  "navigationBarTitleText": "智能佩奇",
+  "navigationBarBackgroundColor": ""
 }

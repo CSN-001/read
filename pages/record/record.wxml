@@ -6,10 +6,10 @@
     <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/pig2.jpg" wx:if="{{imshow}}"/>
     <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/pig.gif" wx:else/>
   </view>
-  <view>
-    <radio-group class="item-right radio-group" bindchange="changeSex">
+  <view class="select">
+    <radio-group class="radio-group" bindchange="changeSex">
       <label class="radio" wx:for="{{items}}" wx:key="index">
-        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item}}
+        <radio value="{{item.name}}" checked="{{item.checked}}">{{item.name}}</radio>
       </label>
     </radio-group>
   </view>

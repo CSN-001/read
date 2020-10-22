@@ -1,9 +1,6 @@
 // pages/record/record.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
+  //页面的初始数据
   data: {
     recorderManager: null,
     asrRes: null,
@@ -13,7 +10,16 @@ Page({
     imshow: true,
     audio: null,
     value: "",
-    items: ['翻译', '对话', '诗词', '音乐']
+    items: [{
+      name: '翻译',
+      checked: true
+    },{
+      name: '对话'
+    },{
+      name: '诗词'
+    },{
+      name: '音乐'
+    }]
   },
   //变换语音文字图标
   vary() {

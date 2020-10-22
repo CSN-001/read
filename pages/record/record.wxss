@@ -27,6 +27,14 @@
   height: 550rpx;
   width: 640rpx;
 }
+
+.select {
+  background-color: salmon;
+}
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+}
 .down {
   /* background-color: papayawhip; */
   position:absolute;
@@ -57,9 +65,6 @@
   font-size: 35rpx;
   height: 80rpx;
   width: 140rpx;
-}
-.switch {
-  /* float: left; */
 }
 .button {
   width: 650rpx;
