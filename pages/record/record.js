@@ -33,26 +33,48 @@ Page({
   adplay(url) {
     this.data.audio.src = url
     this.data.audio.play()
-    this.data.audio.onPlay(() => {
-      this.setData({imshow: false})
-    })
-    this.data.audio.onEnded(() => {
-      this.setData({imshow: true})
-    })
+    setTimeout(() => {
+      this.data.audio.onPlay(() => {
+        this.setData({imshow: false})
+      })
+      this.data.audio.onEnded(() => {
+        this.setData({imshow: true})
+      })
+    }, 500)
   },
+  //诗词部分
   poem() {
     const db = wx.cloud.database()
     db.collection("poem").where({
       name: this.data.inputing
     }).get().then(res => {
-      console.log(res.data)
+      this.setData({value: res.data[0].value})
+      this.adplay(res.data[0].music)
     }).catch(err => {
       console.log(err)
     })
   },
-  //文本发送到后端
+  //监听单选框变化
+  radioChange(e) {
+    const it = this.data.items
+    for (let i = 0; i < it.length; ++i) {
+      it[i].checked = it[i].name === e.detail.value
+    }
+    this.setData({
+      items: it
+    })
+  },
+  //文本发送获取结果
   send() {
-    this.poem()
+    if (this.data.items[0].checked) {
+      
+    } else if(this.data.items[1].checked) {
+      
+    } else if (this.data.items[2].checked) {
+      this.poem()
+    } else if (this.data.items[3].checked) {
+      
+    }
   },
   //长按录音事件
   longpress() {
@@ -112,7 +134,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    
   },
 
   /**

@@ -7,7 +7,7 @@
     <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/pig.gif" wx:else/>
   </view>
   <view class="select">
-    <radio-group class="radio-group" bindchange="changeSex">
+    <radio-group class="radio-group" bindchange="radioChange">
       <label class="radio" wx:for="{{items}}" wx:key="index">
         <radio value="{{item.name}}" checked="{{item.checked}}">{{item.name}}</radio>
       </label>
