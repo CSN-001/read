@@ -30,8 +30,8 @@ Page({
     }
   },
   //播放后台传输来的音频
-  adplay() {
-    this.data.audio.src = 'https://www.runoob.com/try/demo_source/horse.mp3'
+  adplay(url) {
+    this.data.audio.src = url
     this.data.audio.play()
     this.data.audio.onPlay(() => {
       this.setData({imshow: false})
@@ -40,10 +40,19 @@ Page({
       this.setData({imshow: true})
     })
   },
+  poem() {
+    const db = wx.cloud.database()
+    db.collection("poem").where({
+      name: this.data.inputing
+    }).get().then(res => {
+      console.log(res.data)
+    }).catch(err => {
+      console.log(err)
+    })
+  },
   //文本发送到后端
   send() {
-    this.adplay()
-    this.setData({value: this.data.inputing})
+    this.poem()
   },
   //长按录音事件
   longpress() {
