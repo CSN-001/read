@@ -2,6 +2,7 @@
 Page({
   //页面的初始数据
   data: {
+    imsrc: 'cloud://yun-74jba.7975-yun-74jba-1259601148/pig2.jpg',
     recorderManager: null,
     asrRes: null,
     icon: "music-o",
@@ -17,8 +18,6 @@ Page({
       name: '对话'
     },{
       name: '诗词'
-    },{
-      name: '音乐'
     }]
   },
   //变换语音文字图标
@@ -32,20 +31,26 @@ Page({
   //播放后台传输来的音频
   adplay(url) {
     this.data.audio.src = url
-    this.data.audio.play()
-    setTimeout(() => {
-      this.data.audio.onPlay(() => {
-        this.setData({imshow: false})
+    this.data.audio.autoplay = true
+    //this.data.audio.play()
+    this.data.audio.onPlay(() => {
+      this.setData({
+        imshow: false,
+        imsrc: 'cloud://yun-74jba.7975-yun-74jba-1259601148/pig.gif'
       })
-      this.data.audio.onEnded(() => {
-        this.setData({imshow: true})
+    })
+    this.data.audio.onEnded(() => {
+      this.setData({
+        imshow: true,
+        imsrc: 'cloud://yun-74jba.7975-yun-74jba-1259601148/pig2.jpg'
       })
-    }, 500)
+      this.data.audio.src = null
+    })
   },
-  //诗词部分
-  poem() {
+  //翻译对话诗词部分
+  poem(set) {
     const db = wx.cloud.database()
-    db.collection("poem").where({
+    db.collection(set).where({
       name: this.data.inputing
     }).get().then(res => {
       this.setData({value: res.data[0].value})
@@ -67,13 +72,11 @@ Page({
   //文本发送获取结果
   send() {
     if (this.data.items[0].checked) {
-      
+      this.poem("translate")
     } else if(this.data.items[1].checked) {
-      
+      this.poem("dialog")
     } else if (this.data.items[2].checked) {
-      this.poem()
-    } else if (this.data.items[3].checked) {
-      
+      this.poem("poem")
     }
   },
   //长按录音事件

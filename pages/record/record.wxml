@@ -3,8 +3,8 @@
     <textarea name="en" cols="25" rows="4" readonly model:value="{{value}}" />
   </view>
   <view class="pig">
-    <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/pig2.jpg" wx:if="{{imshow}}"/>
-    <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/pig.gif" wx:else/>
+    <!-- <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/pig2.jpg" wx:if="{{imshow}}"/> -->
+    <image src="{{imsrc}}" />
   </view>
   <view class="select">
     <radio-group class="radio-group" bindchange="radioChange">
