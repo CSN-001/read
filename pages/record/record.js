@@ -2,13 +2,13 @@
 Page({
   //页面的初始数据
   data: {
+    show: false,
     imsrc: 'cloud://yun-74jba.7975-yun-74jba-1259601148/pig2.jpg',
     recorderManager: null,
     asrRes: null,
     icon: "music-o",
     i: true,
     inputing: "",
-    imshow: true,
     audio: null,
     value: "",
     items: [{
@@ -28,20 +28,24 @@ Page({
       this.setData({i:true, icon: "music-o"})
     }
   },
+  //智能推荐评价
+  showPopup() {
+    this.setData({show: true});
+  },
+  onclose() {
+    this.setData({show: false})
+  },
   //播放后台传输来的音频
   adplay(url) {
     this.data.audio.src = url
-    this.data.audio.autoplay = true
-    //this.data.audio.play()
+    this.data.audio.play()
     this.data.audio.onPlay(() => {
       this.setData({
-        imshow: false,
         imsrc: 'cloud://yun-74jba.7975-yun-74jba-1259601148/pig.gif'
       })
     })
     this.data.audio.onEnded(() => {
       this.setData({
-        imshow: true,
         imsrc: 'cloud://yun-74jba.7975-yun-74jba-1259601148/pig2.jpg'
       })
       this.data.audio.src = null

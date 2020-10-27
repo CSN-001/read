@@ -28,8 +28,20 @@
   width: 640rpx;
 }
 
-.select {
+.label {
+  /* background-image: url(); */
+  width: 85%;
+  margin: auto;
   background-color: salmon;
+  margin-top: 20rpx;
+}
+.ttl{
+  font-size: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.select {
+  
 }
 .radio-group {
   display: flex;

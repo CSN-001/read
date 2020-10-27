@@ -1,17 +1,27 @@
 <view class="record">
+  <van-popup show="{{ show }}" position="left"
+  custom-style="width: 60%;height: 100%" closeable
+  bind:close="onclose">
+    <steps></steps>
+  </van-popup>
   <view class="up">
     <textarea name="en" cols="25" rows="4" readonly model:value="{{value}}" />
-  </view>
+    </view>
   <view class="pig">
-    <!-- <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/pig2.jpg" wx:if="{{imshow}}"/> -->
     <image src="{{imsrc}}" />
   </view>
-  <view class="select">
-    <radio-group class="radio-group" bindchange="radioChange">
-      <label class="radio" wx:for="{{items}}" wx:key="index">
-        <radio value="{{item.name}}" checked="{{item.checked}}">{{item.name}}</radio>
-      </label>
-    </radio-group>
+  <view class="label">
+    <view class="ttl">
+      <text>功能选择</text>
+      <van-icon name="setting-o" size="50rpx" bindtap="showPopup"/>
+    </view>
+    <view class="select">
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" wx:for="{{items}}" wx:key="index">
+          <radio value="{{item.name}}" checked="{{item.checked}}">{{item.name}}</radio>
+        </label>
+      </radio-group>
+    </view>
   </view>
   <view class="down">
     <view class="switch">

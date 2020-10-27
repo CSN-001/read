@@ -1,0 +1,16 @@
+<view class="steps">
+  <van-divider contentPosition="left"
+  customStyle="color: #1989fa; border-color: #1989fa; font-size: 45rpx;">
+    学习建议
+  </van-divider>
+  <view>
+    <van-steps steps="{{steps}}" active="{{active}}"
+    direction="vertical" active-color="blue"
+    bindtap="add" />
+  </view>
+  <van-divider contentPosition="left"
+  customStyle="color: #1989fa; border-color: #1989fa; font-size: 45rpx;">
+    能力评分
+  </van-divider>
+  <van-rate value="3.5" allow-half />
+</view>

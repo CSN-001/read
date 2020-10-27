@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "steps": "/component/steps/steps"
+  },
   "navigationBarTextStyle": "black",
   "navigationBarTitleText": "智能佩奇",
   "navigationBarBackgroundColor": "#F69C0A"

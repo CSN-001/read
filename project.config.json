@@ -73,6 +73,13 @@
           "id": -1,
           "name": "record",
           "pathName": "pages/record/record",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "step",
+          "pathName": "pages/step/step",
           "scene": null
         }
       ]
