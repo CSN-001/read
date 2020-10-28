@@ -3,14 +3,25 @@
   customStyle="color: #1989fa; border-color: #1989fa; font-size: 45rpx;">
     学习建议
   </van-divider>
-  <view>
+  <view class="vstep">
     <van-steps steps="{{steps}}" active="{{active}}"
-    direction="vertical" active-color="blue"
-    bindtap="add" />
+    direction="vertical" active-color="#07C160"
+    bindtap="add" desc-class="st"/>
   </view>
   <van-divider contentPosition="left"
   customStyle="color: #1989fa; border-color: #1989fa; font-size: 45rpx;">
     能力评分
   </van-divider>
-  <van-rate value="3.5" allow-half />
+  <view class="evaluate">
+    <text>发音标准</text><br/>
+    <van-rate value="3.5" allow-half />
+  </view>
+  <view class="evaluate">
+    <text>语法标准</text><br/>
+    <van-rate value="4.5" allow-half />
+  </view>
+  <view class="evaluate">
+    <text>词汇标准</text><br/>
+    <van-rate value="4" allow-half />
+  </view>
 </view>

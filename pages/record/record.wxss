@@ -1,3 +1,8 @@
+page{
+  background-image: url('https://7975-yun-74jba-1259601148.tcb.qcloud.la/back/back1.jpg?sign=287e59b4303e7868a626d812c6aea6b4&t=1603895510');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 .putButton{
   color: white;
   background-color: red;
@@ -29,19 +34,33 @@
 }
 
 .label {
-  /* background-image: url(); */
+  background-image: url('https://7975-yun-74jba-1259601148.tcb.qcloud.la/back/back2.jpg?sign=fcaeb56e8325a15b07ae03dbbba62dd1&t=1603896476');
   width: 85%;
+  height: 140rpx;
   margin: auto;
-  background-color: salmon;
   margin-top: 20rpx;
+  border-radius: 20rpx;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
 }
 .ttl{
   font-size: 40rpx;
   display: flex;
   justify-content: space-around;
+  color: #FF8830;
+}
+.ttl text{
+  margin-top: 10rpx;
+}
+.setting{
+  position: absolute;
+  right: 90rpx;
+  top: 900rpx;
 }
 .select {
-  
+  margin-top: 25rpx;
+  margin-bottom: 20rpx;
 }
 .radio-group {
   display: flex;
@@ -57,7 +76,6 @@
 }
 
 .in {
-  background-color: papayawhip;
   width: 660rpx;
   height: 88rpx;
   display: flex;

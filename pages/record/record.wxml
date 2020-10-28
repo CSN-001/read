@@ -13,7 +13,9 @@
   <view class="label">
     <view class="ttl">
       <text>功能选择</text>
-      <van-icon name="setting-o" size="50rpx" bindtap="showPopup"/>
+      <view class="setting">
+        <van-icon name="setting-o" size="50rpx" bindtap="showPopup"/>
+      </view>
     </view>
     <view class="select">
       <radio-group class="radio-group" bindchange="radioChange">
