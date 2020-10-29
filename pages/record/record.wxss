@@ -36,13 +36,13 @@ page{
 .label {
   background-image: url('https://7975-yun-74jba-1259601148.tcb.qcloud.la/back/back2.jpg?sign=fcaeb56e8325a15b07ae03dbbba62dd1&t=1603896476');
   width: 85%;
-  height: 140rpx;
+  height: 160rpx;
   margin: auto;
   margin-top: 20rpx;
   border-radius: 20rpx;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  
+  position: relative;
 }
 .ttl{
   font-size: 40rpx;
@@ -51,12 +51,12 @@ page{
   color: #FF8830;
 }
 .ttl text{
-  margin-top: 10rpx;
+  margin-top: 20rpx;
 }
 .setting{
   position: absolute;
-  right: 90rpx;
-  top: 900rpx;
+  right: 35rpx;
+  top: 20rpx;
 }
 .select {
   margin-top: 25rpx;
@@ -87,6 +87,7 @@ page{
   border: 5rpx solid rebeccapurple;
   border-radius: 25rpx;
   align-items: center;
+  background-color: cornsilk;
 }
 .btn {
   border-radius: 15rpx;
