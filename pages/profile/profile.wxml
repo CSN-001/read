@@ -1,2 +1,61 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<view class="profile">
+  <view class="login">
+    <view class="user-pic">
+      <image src="/img/user.jpg" class="user-pic-img" />
+    </view>
+    <view class="user-info">
+      <p>登录/注册</p>
+      <view class="phone-num">
+        <image class="icon-phone" src="/img/phone.png" />
+        <p>暂未绑定手机号</p>
+      </view>
+    </view>
+    <view class="profile-arrow-right">
+      <image src="/img/arrow_right.png" />
+    </view>
+  </view>
+  <view class="money">
+    <view class="money-item">
+      <p>
+        0.00
+        <span>元</span>
+      </p>
+      <p>我的余额</p>
+    </view>
+    <view class="money-item">
+      <p>
+        0
+        <span>个</span>
+      </p>
+      <p>我的优惠</p>
+    </view>
+    <view class="money-item">
+      <p>
+        0
+        <span>分</span>
+      </p>
+      <p>我的积分</p>
+    </view>
+  </view>
+  <view class="list">
+    <view class="cell">
+      <van-cell-group>
+        <van-cell title="我的消息" icon="manager" size="large" is-link />
+        <van-cell title="积分商城" icon="point-gift" size="large" is-link />
+      </van-cell-group>
+    </view>
+    <view class="cell">
+      <van-cell-group>
+        <van-cell title="我的课程" icon="shopping-cart" size="large" is-link />
+        <van-cell title="学校认证" icon="friends" size="large" is-link />
+        <van-cell title="学习打卡" icon="checked" size="large" is-link />
+      </van-cell-group>
+    </view>
+    <view class="cell">
+      <van-cell-group>
+        <van-cell title="点赞APP" icon="good-job" size="large" is-link />
+        <van-cell title="设置" icon="setting" size="large" is-link />
+      </van-cell-group>
+    </view>
+  </view>
+</view>

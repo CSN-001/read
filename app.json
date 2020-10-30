@@ -34,7 +34,10 @@
     "van-steps": "@vant/weapp/steps/index",
     "van-rate": "@vant/weapp/rate/index",
     "van-popup": "@vant/weapp/popup/index",
-    "van-divider": "@vant/weapp/divider/index"
+    "van-divider": "@vant/weapp/divider/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
   },
   "sitemapLocation": "sitemap.json"
 }
