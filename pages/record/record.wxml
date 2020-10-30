@@ -1,7 +1,5 @@
 <view class="record">
-  <van-popup show="{{ show }}" position="left"
-  custom-style="width: 60%;height: 100%" closeable
-  bind:close="onclose">
+  <van-popup show="{{ show }}" position="left" custom-style="width: 60%;height: 100%" closeable bind:close="onclose">
     <steps></steps>
   </van-popup>
   <view class="up">

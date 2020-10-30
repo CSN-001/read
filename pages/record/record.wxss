@@ -1,12 +1,14 @@
-page{
+page {
   background-image: url('https://7975-yun-74jba-1259601148.tcb.qcloud.la/back/back1.jpg?sign=287e59b4303e7868a626d812c6aea6b4&t=1603895510');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.putButton{
+
+.putButton {
   color: white;
   background-color: red;
 }
+
 .up {
   text-align: center;
   margin: auto;
@@ -14,6 +16,7 @@ page{
   display: flex;
   justify-content: center;
 }
+
 .up textarea {
   margin-top: 10rpx;
   margin-bottom: 10rpx;
@@ -23,11 +26,14 @@ page{
   border-width: 10rpx;
   border-color: orange;
   width: 90%;
+  font-size: 40rpx;
 }
+
 .pig {
   text-align: center;
   margin: auto;
 }
+
 .pig image {
   height: 550rpx;
   width: 640rpx;
@@ -44,31 +50,37 @@ page{
   background-size: 100% 100%;
   position: relative;
 }
-.ttl{
+
+.ttl {
   font-size: 40rpx;
   display: flex;
   justify-content: space-around;
   color: #FF8830;
 }
-.ttl text{
+
+.ttl text {
   margin-top: 20rpx;
 }
-.setting{
+
+.setting {
   position: absolute;
   right: 35rpx;
   top: 20rpx;
 }
+
 .select {
   margin-top: 25rpx;
   margin-bottom: 20rpx;
 }
+
 .radio-group {
   display: flex;
   justify-content: space-around;
 }
+
 .down {
   /* background-color: papayawhip; */
-  position:absolute;
+  position: absolute;
   display: flex;
   bottom: 15rpx;
   width: 750rpx;
@@ -81,6 +93,7 @@ page{
   display: flex;
   justify-content: space-around;
 }
+
 .input {
   width: 500rpx;
   height: 80rpx;
@@ -89,6 +102,7 @@ page{
   align-items: center;
   background-color: cornsilk;
 }
+
 .btn {
   border-radius: 15rpx;
   background: dodgerblue;
@@ -97,6 +111,7 @@ page{
   height: 80rpx;
   width: 140rpx;
 }
+
 .button {
   width: 650rpx;
 }

@@ -1,23 +1,26 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/record/record"
+    "pages/record/record",
+    "pages/profile/profile"
   ],
   "tabBar": {
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "img/main.png",
-        "selectedIconPath": "img/main.png"
-      },
-      {
+        "iconPath": "/img/main.png",
+        "selectedIconPath": "/img/main.png"
+      },{
         "pagePath": "pages/record/record",
         "text": "智能",
-        "iconPath": "img/main.png",
-        "selectedIconPath": "img/main.png"
-      }
-    ]
+        "iconPath": "/img/main.png",
+        "selectedIconPath": "/img/main.png"
+      },{
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/img/main.png",
+        "selectedIconPath": "/img/main.png"
+      }]
   },
   "window": {
     "backgroundTextStyle": "light",
