@@ -30,6 +30,12 @@ Page({
   },
   //智能推荐评价
   showPopup() {
+    wx.showLoading({
+      title: '加载中',
+    })
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 500)
     this.setData({show: true});
   },
   onclose() {
@@ -85,6 +91,11 @@ Page({
   },
   //长按录音事件
   longpress() {
+    wx.showToast({
+      title: '开始录音',
+      icon: 'success',
+      duration: 2000
+    })
     var recorderManager = wx.getRecorderManager()
     this.setData({
       recorderManager: recorderManager
