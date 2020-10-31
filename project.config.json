@@ -87,6 +87,13 @@
           "id": -1,
           "name": "profile",
           "pathName": "pages/profile/profile",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "word",
+          "pathName": "pages/word/word",
           "scene": null
         }
       ]
