@@ -16,14 +16,14 @@
       {
         "pagePath": "pages/record/record",
         "text": "智能",
-        "iconPath": "/img/main.png",
-        "selectedIconPath": "/img/main.png"
+        "iconPath": "/img/pig.png",
+        "selectedIconPath": "/img/pig.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "我的",
-        "iconPath": "/img/main.png",
-        "selectedIconPath": "/img/main.png"
+        "iconPath": "/img/robot.png",
+        "selectedIconPath": "/img/robot.png"
       }
     ]
   },

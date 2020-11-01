@@ -78,13 +78,6 @@
         },
         {
           "id": -1,
-          "name": "step",
-          "pathName": "pages/step/step",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
           "name": "profile",
           "pathName": "pages/profile/profile",
           "query": "",
@@ -94,6 +87,7 @@
           "id": -1,
           "name": "word",
           "pathName": "pages/word/word",
+          "query": "",
           "scene": null
         }
       ]
