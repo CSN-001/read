@@ -1,4 +1,4 @@
-// pages/word/word.js
+// pages/test/test.js
 Page({
 
   /**
@@ -6,29 +6,44 @@ Page({
    */
   data: {
     list: [{
-      meaning: "v.暂停播放；暂停，中止；n.中止，暂停"
-    },{
-      meaning: "v.把……切成片；大幅度削减；切开；n.…"
-    },{
-      meaning: "adj.酸的"
-    },{
-      meaning: "v.宣传；宣传方法"
-    }]
+      meaning:"v.暂停播放；暂停，中止；n.中止，暂停"
+    },
+    {
+      meaning:"v.把……切成片；大幅度削减；切开；n.…"
+    },
+    {
+      meaning:"adj.酸的"
+    },
+    {
+      meaning:"v.宣传；宣传方法"
+    },
+    ]
   },
-  check_ans: function (e) {
+
+  check_ans:function(e)
+  {
     console.log(e.currentTarget.dataset.value)
-    var ans = e.currentTarget.dataset.value
-    if (ans == 1) {
+    var ans=e.currentTarget.dataset.value
+    if(ans==1){
       wx.showToast({
-        title: '答案正确',
+        title: '回答正确',
         icon: 'success',
-        duration: 1500
-      })
-    } else {
+        duration: 2000,
+        success: () => {
+          setTimeout(() => {
+            wx.navigateTo({
+              url: '../test2/test2',
+            })
+          }, 1000);
+        }
+    });
+     
+    }
+    else{
       wx.showToast({
         title: '答案错误',
-        icon: "none",
-        duration: 1500
+        icon:"none",
+        duration:1500
       })
     }
   },

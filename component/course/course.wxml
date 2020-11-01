@@ -1,0 +1,16 @@
+<view class="course">
+  <view class="detail">
+    <van-card num="{{item.num}}" tag="{{item.tag}}" price="{{item.price}}" thumb="{{item.thumb}}" origin-price="{{item.origin}}"
+      wx:for="{{cr}}" wx:key="index" title="{{item.title}}"
+      custom-class="custom-class" title-class="title-class">
+      <view slot="tags" class="sTags">
+        <van-tag round type="success">公开课</van-tag>
+        <van-tag round type="warning" style="margin-left: 8rpx">{{item.tags}}</van-tag>
+      </view>
+      <view slot="footer">
+        <button size="mini" type="warn" style="margin-right: 8rpx">收藏</button>
+        <button size="mini" type="primary">分享</button>
+      </view>
+    </van-card>
+  </view>
+</view>

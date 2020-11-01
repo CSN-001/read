@@ -1,0 +1,18 @@
+.box01{
+  height: 120rpx;
+  width: 85%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: white;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  border-radius: 5%;
+  border: rgb(242, 242, 242);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(220, 220, 220, 0.582) 0px 2px 5px 2px;
+}
+.view-hover{
+  background-color: rgb(244, 244, 240);
+}

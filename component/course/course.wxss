@@ -1,0 +1,15 @@
+.detail {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.custom-class {
+  border-radius: 20px;
+  margin: 0px 10px 10px 10px;
+}
+.title-class{
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.sTags{
+  margin-top: 13rpx;
+}

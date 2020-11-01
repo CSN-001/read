@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/record/record",
     "pages/profile/profile",
-    "pages/word/word"
+    "pages/test1/test1",
+    "pages/test2/test2",
+    "pages/test3/test3"
   ],
   "tabBar": {
     "list": [
@@ -40,9 +42,14 @@
     "van-rate": "@vant/weapp/rate/index",
     "van-popup": "@vant/weapp/popup/index",
     "van-divider": "@vant/weapp/divider/index",
-    "van-image": "@vant/weapp/image/index",
+    "van-search": "@vant/weapp/search/index",
     "van-cell": "@vant/weapp/cell/index",
-    "van-cell-group": "@vant/weapp/cell-group/index"
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-card": "@vant/weapp/card/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-button": "@vant/weapp/button/index"
   },
   "sitemapLocation": "sitemap.json"
 }
