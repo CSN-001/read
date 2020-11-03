@@ -85,15 +85,8 @@
         },
         {
           "id": -1,
-          "name": "word",
-          "pathName": "pages/word/word",
-          "query": "",
-          "scene": null
-        },
-        {
-          "id": -1,
-          "name": "test1",
-          "pathName": "pages/test1/test1",
+          "name": "community",
+          "pathName": "pages/community/community",
           "query": "",
           "scene": null
         }

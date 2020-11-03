@@ -1,5 +1,8 @@
 {
   "usingComponents": {
     "course": "/component/course/course"
-  }
+  },
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "首页",
+  "navigationBarBackgroundColor": "#F69C0A"
 }
