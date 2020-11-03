@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#F69C0A",
+  "navigationBarTitleText": "学习社区"
 }

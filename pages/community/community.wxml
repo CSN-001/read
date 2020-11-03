@@ -2,21 +2,24 @@
   <view class="new-author-date">
     <image src="/img/user.jpg" class="new-author" />
     <text class="name">长郡小学-小丫</text>
-    <van-icon name="map-marked" size="40rpx" custom-style="margin-left: 270rpx;"/>
+    <van-icon name="map-marked" size="40rpx" custom-style="margin-left: 270rpx;" />
     <text class="new-date">长沙市\n4.20km</text>
   </view>
 
   <view class="new-info">
-    <text class="new-info-tile">考了100分，耶！！</text>
+    <text class="new-info-tile">又考了100分，耶！！</text>
     <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/shequ/100.png" class="new-info-img" />
-    <text
-      class="new-info-summary">与朋友徜徉于农庄，新鲜的空气打动了我的心情，柳暗花明、绿树草坪、鸟语花香，让我享受到返璞归真的“原生态”。心情如此灿烂，只因大自然的娇美容姿！绿色，真好！自然，真好！！</text>
+    <view class="txt">
+      <text class="new-info-summary">
+        这次又考了100分，太高兴了，非常感谢Accompanying reading这个app，用了半年这个小程序，我的英语成绩从以前的不及格到现在轻松考到100分，继续加油！！！
+      </text>
+    </view>
   </view>
 
   <view class="comment">
-    <van-icon name="good-job" size="35rpx" custom-style="margin-left: 20rpx;"/>
+    <van-icon name="good-job" size="35rpx" custom-style="margin-left: 20rpx;" />
     <text class="new-num">1524</text>
-    <van-icon name="star" size="35rpx" custom-style="margin-left: 20rpx;"/>
+    <van-icon name="star" size="35rpx" custom-style="margin-left: 20rpx;" />
     <text class="new-num">360</text>
     <text class="time">2020/11/03\t\t11:30</text>
   </view>
@@ -25,20 +28,24 @@
   <view class="new-author-date">
     <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/shequ/head.jpg" class="new-author" />
     <text class="name">湘大附属小学-兔子</text>
-    <van-icon name="map-marked" size="40rpx" custom-style="margin-left: 220rpx;"/>
+    <van-icon name="map-marked" size="40rpx" custom-style="margin-left: 220rpx;" />
     <text class="new-date">湘潭大学\n480m</text>
   </view>
 
   <view class="new-info">
     <text class="new-info-tile">全国小学生英语竞赛金奖</text>
     <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/shequ/cup.jpg" class="new-info-img" />
-    <text class="new-info-summary">家乡在我们心里铭刻着的是什么？那是我们生命的最初落脚地，是青葱碧绿的田野，是清澈见底的河水，家乡的一草一木都浸润着我们童年的记忆。</text>
+    <view class="txt">
+      <text class="new-info-summary">
+        和预期的一样，成功夺取金奖，比赛前还有点担心，但还是凭借扎实的功底获取了预期的成绩，谢谢大家以前给予的帮助和支持。
+      </text>
+    </view>
   </view>
 
   <view class="comment">
-    <van-icon name="good-job" size="35rpx" custom-style="margin-left: 20rpx;"/>
+    <van-icon name="good-job" size="35rpx" custom-style="margin-left: 20rpx;" />
     <text class="new-num">1524</text>
-    <van-icon name="star" size="35rpx" custom-style="margin-left: 20rpx;"/>
+    <van-icon name="star" size="35rpx" custom-style="margin-left: 20rpx;" />
     <text class="new-num">360</text>
     <text class="time">2020/11/05\t\t16:30</text>
   </view>

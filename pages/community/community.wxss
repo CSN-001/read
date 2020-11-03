@@ -53,12 +53,14 @@
 }
 
 .new-info-summary {
-  margin-left: 40rpx;
-  margin-right: 40rpx;
   line-height: 44rpx;
   font-size: 28rpx;
   color: #666;
   letter-spacing: 3rpx;
+}
+.txt{
+  padding-left: 10rpx;
+  padding-right: 10rpx;
 }
 
 .comment {

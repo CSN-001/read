@@ -1,13 +1,24 @@
 <view>
-<text style="font-size: 22rpx;color:grey" space="ensp"> 需新学 0</text>
-<text style="font-size: 22rpx;color:grey" space="ensp">\n 需复习 1</text>
+  <text style="font-size: 22rpx;color:grey" space="ensp"> 需新学 0</text>
+  <text style="font-size: 22rpx;color:grey" space="ensp">\n 需复习 1</text>
 </view>
 <view style="text-align:center;margin-top:15%">
   <text style="font-size: 70rpx;font-weight:bold">apple</text>
   <text style="font-size: 35rpx;color:grey">\n/ˈæp(ə)/</text>
 </view>
+<van-dialog
+  use-slot
+  title="恭喜你，your score："
+  show="{{ show }}"
+  show-cancel-button
+  bind:close="onClose"
+  bind:confirm="onClose"
+>
+  <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/back/score.jpg" />
+</van-dialog>
 <view style="margin-top:30%">
-  <view class="box01" wx:for="{{list}}" wx:key="index" hover-class="view-hover" bindtap="check_ans" data-value='{{index}}'>
-  {{item.meaning}}
+  <view class="box01" wx:for="{{list}}" wx:key="index" hover-class="view-hover" bindtap="check_ans"
+    data-value='{{index}}'>
+    {{item.meaning}}
   </view>
-</view> 
+</view>
