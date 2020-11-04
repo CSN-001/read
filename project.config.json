@@ -92,8 +92,9 @@
         },
         {
           "id": -1,
-          "name": "test3",
-          "pathName": "pages/test3/test3",
+          "name": "player",
+          "pathName": "pages/player/player",
+          "query": "",
           "scene": null
         }
       ]
