@@ -1,4 +1,4 @@
-<view>
+<view class="labels">
   <text style="font-size: 22rpx;color:grey" space="ensp"> 需新学 0</text>
   <text style="font-size: 22rpx;color:grey" space="ensp">\n 需复习 3</text>
 </view>
