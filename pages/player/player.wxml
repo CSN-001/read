@@ -4,7 +4,7 @@
     danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
   <view class="detail">
     <view class="ke_title">
-      <text>小猪配齐学英语</text>
+      <text>小猪佩奇学英语</text>
       <van-tag round type="warning">国家精品</van-tag>
     </view>
     <view class="infos">

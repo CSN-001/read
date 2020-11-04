@@ -2,7 +2,8 @@
   <view class="detail">
     <van-card num="{{item.num}}" tag="{{item.tag}}" price="{{item.price}}" thumb="{{item.thumb}}" origin-price="{{item.origin}}"
       wx:for="{{cr}}" wx:key="index" title="{{item.title}}"
-      custom-class="custom-class" title-class="title-class">
+      custom-class="custom-class" title-class="title-class"
+      thumb-link="/pages/player/player">
       <view slot="tags" class="sTags">
         <van-tag round type="success">公开课</van-tag>
         <van-tag round type="warning" style="margin-left: 8rpx">{{item.tags}}</van-tag>
