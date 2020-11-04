@@ -5,45 +5,36 @@ Page({
    * 页面的初始数据
    */
   data: {
+    show: false,
     list: [{
-      meaning:"v.苹果"
-    },
-    {
-      meaning:"v.摘"
-    },
-    {
-      meaning:"adj.红的"
-    },
-    {
-      meaning:"n.苹果"
-    },
+        meaning: "v.苹果"
+      },
+      {
+        meaning: "v.摘"
+      },
+      {
+        meaning: "adj.红的"
+      },
+      {
+        meaning: "n.苹果"
+      },
     ]
   },
-
-  check_ans:function(e)
-  {
+  onClose(){
+    wx.switchTab({
+      url: '/pages/index/index'
+    })
+  },
+  check_ans: function (e) {
     console.log(e.currentTarget.dataset.value)
-    var ans=e.currentTarget.dataset.value
-    if(ans==3){
-      wx.showToast({
-        title: '恭喜你！小朋友',
-        icon:'success',
-        duration:1500,
-        success: () => {
-          setTimeout(() => {
-            wx.switchTab({
-              url: '/pages/index/index'
-            })
-          }, 1000)
-        }
-      })
-      
-    }
-    else{
+    var ans = e.currentTarget.dataset.value
+    if (ans == 3) {
+      this.setData({show: true})
+    } else {
       wx.showToast({
         title: '答案错误',
-        icon:"none",
-        duration:1500
+        icon: "none",
+        duration: 1500
       })
     }
   },

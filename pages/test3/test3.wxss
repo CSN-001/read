@@ -16,3 +16,6 @@
 .view-hover{
   background-color: rgb(244, 244, 240);
 }
+.labels{
+  margin-left: 20rpx;
+}

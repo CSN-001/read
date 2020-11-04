@@ -1,10 +1,13 @@
 <view class="profile">
   <view class="login">
     <view class="user-pic">
-      <image src="/img/user.jpg" class="user-pic-img" />
+      <image src="{{userInfo.avatarUrl}}" class="user-pic-img" />
     </view>
-    <view class="user-info">
-      <p>登录/注册</p>
+    <button class="btn" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      微信授权登录
+    </button>
+    <view class="user-info" wx:else>
+      <p>{{userInfo.nickName}}</p>
       <view class="phone-num">
         <image class="icon-phone" src="/img/phone.png" />
         <p>暂未绑定手机号</p>

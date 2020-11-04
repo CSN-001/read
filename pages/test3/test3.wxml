@@ -1,4 +1,4 @@
-<view>
+<view class="labels">
   <text style="font-size: 22rpx;color:grey" space="ensp"> 需新学 0</text>
   <text style="font-size: 22rpx;color:grey" space="ensp">\n 需复习 1</text>
 </view>
@@ -10,8 +10,6 @@
   use-slot
   title="恭喜你，your score："
   show="{{ show }}"
-  show-cancel-button
-  bind:close="onClose"
   bind:confirm="onClose"
 >
   <image src="cloud://yun-74jba.7975-yun-74jba-1259601148/back/score.jpg" />

@@ -1,13 +1,14 @@
 <view>
-<text style="font-size: 22rpx;color:grey" space="ensp"> 需新学 0</text>
-<text style="font-size: 22rpx;color:grey" space="ensp">\n 需复习 3</text>
+  <text style="font-size: 22rpx;color:grey" space="ensp"> 需新学 0</text>
+  <text style="font-size: 22rpx;color:grey" space="ensp">\n 需复习 3</text>
 </view>
 <view style="text-align:center;margin-top:15%">
   <text style="font-size: 70rpx;font-weight:bold">slice</text>
   <text style="font-size: 35rpx;color:grey">\n/slaɪs/</text>
 </view>
 <view style="margin-top:30%">
-  <view class="box01" wx:for="{{list}}" wx:key="index" hover-class="view-hover" bindtap="check_ans" data-value='{{index}}'>
-  {{item.meaning}}
+  <view class="box01" wx:for="{{list}}" wx:key="index" hover-class="view-hover" bindtap="check_ans"
+    data-value='{{index}}'>
+    {{item.meaning}}
   </view>
 </view>

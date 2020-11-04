@@ -12,6 +12,11 @@ page{
   margin-top: 3rpx;
 }
 
+.btn{
+  margin-left: 80rpx;
+  background-color: #F69C0A;
+}
+
 .user-pic {
   display: flex;
   align-items: center;
