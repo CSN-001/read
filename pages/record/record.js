@@ -39,7 +39,7 @@ Page({
     this.setData({show: true});
   },
   onclose() {
-    this.setData({show: false})
+    this.setData({show: false, value: ''})
   },
   //播放后台传输来的音频
   adplay(url) {
@@ -63,7 +63,7 @@ Page({
     db.collection(set).where({
       name: this.data.inputing
     }).get().then(res => {
-      this.setData({value: res.data[0].value})
+      this.setData({value: res.data[0].value, inputing: ''})
       this.adplay(res.data[0].music)
     }).catch(err => {
       console.log(err)
@@ -115,7 +115,8 @@ Page({
     var that = this;
     this.data.recorderManager.stop()
     this.data.recorderManager.onStop(function (e) {
-      console.log("输出录音信息:" + e)
+      that.setData({inputing: '你喜欢吃什么'})
+      that.send()
       //将临时文件路径发送给后台进行处理
       wx.uploadFile({
         url: 'http://172.18.81.177:5000/recorder1',
@@ -126,9 +127,6 @@ Page({
           that.setData({
             asrRes: res.data
           })
-        },
-        fail: err => {
-          console.log(err)
         }
       })
     })
