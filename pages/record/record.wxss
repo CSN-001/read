@@ -61,6 +61,12 @@ page {
 .ttl text {
   margin-top: 20rpx;
 }
+.b-icon{
+  background-image: url('https://www.easyicon.net/api/resizeApi.php?id=1127862&size=72');
+  background-size: 100% 100%;
+  width: 60rpx;
+  height: 60rpx;
+}
 
 .setting {
   position: absolute;

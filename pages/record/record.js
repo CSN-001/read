@@ -2,6 +2,7 @@
 Page({
   //页面的初始数据
   data: {
+    index: 0,
     show: false,
     imsrc: 'cloud://yun-74jba.7975-yun-74jba-1259601148/pig2.jpg',
     recorderManager: null,
@@ -18,7 +19,32 @@ Page({
       name: '对话'
     },{
       name: '诗词'
-    }]
+    }],
+    showShare: false,
+    options: [
+      [
+        { name: '微信', icon: 'wechat', openType: 'share'},
+        { name: '微博', icon: 'weibo' },
+        { name: 'QQ', icon: 'qq' },
+      ],
+      [
+        { name: '复制链接', icon: 'link' },
+        { name: '分享海报', icon: 'poster' },
+        { name: '二维码', icon: 'qrcode' },
+      ],
+    ]
+  },
+  open() {
+    this.setData({ showShare: true });
+  },
+  onClose() {
+    this.setData({ showShare: false });
+  },
+  onShareAppMessage: function (res) {
+    return {
+      title: 'coding的学习记录',
+      path: '/component/steps/steps',
+    }
   },
   //变换语音文字图标
   vary() {
@@ -111,11 +137,12 @@ Page({
   },
   //离开按钮
   leave() {
+    var data = ['你叫什么名字', '我喜欢吃米饭']
     console.log("结束录音");
     var that = this;
     this.data.recorderManager.stop()
     this.data.recorderManager.onStop(function (e) {
-      that.setData({inputing: '你喜欢吃什么'})
+      that.setData({inputing: data[that.data.index], index: 1})
       that.send()
       //将临时文件路径发送给后台进行处理
       wx.uploadFile({

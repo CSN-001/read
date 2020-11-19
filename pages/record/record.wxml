@@ -12,7 +12,9 @@
     <view class="ttl">
       <text>功能选择</text>
       <view class="setting">
-        <van-icon name="https://www.easyicon.net/api/resizeApi.php?id=1127862&size=72" size="60rpx" bindtap="showPopup"/>
+        <button class="b-icon" bindtap="showPopup" bindlongpress="open"></button>
+        <!-- <van-icon name="https://www.easyicon.net/api/resizeApi.php?id=1127862&size=72" size="60rpx" bindtap="showPopup" bindlongpress='open'>
+        </van-icon> -->
       </view>
     </view>
     <view class="select">
@@ -35,4 +37,5 @@
       <button hover-class="putButton" bindlongpress='longpress' bindtouchend="leave">长按开始识别</button>
     </view>
   </view>
+  <van-share-sheet show="{{ showShare }}" title="立即分享给好友" options="{{ options }}" bind:close="onClose"/>
 </view>
